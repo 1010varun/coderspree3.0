@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="shortcut icon" href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png">
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <form action="" id="regform">
+          <h1>Registration Form</h1>
+
+          <p class="alert">Registered Successfully!</p>
+
+          <!-- <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name"> -->
+
+          <div class="input-container">
+            <input type="text" id="name" required />
+            <label for="name" class="label">Name</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="mail" required />
+            <label for="mail" class="label">KIET mail</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="library" required />
+            <label for="library" class="label">Library ID</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="github" required />
+            <label for="github" class="label">Github Profile</label>
+          </div>
+
+          <button type="submit" class="button">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <script src="./js/form.js"></script>
+  </body>
+</html>
