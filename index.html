@@ -1,210 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Basic -->
+  <!-- Basic -->
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Site Metas -->
     <title>Coderspree3.0</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png">
+    <link
+      rel="shortcut icon"
+      href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css" />
 
     <style>
-            html{
-                scroll-behavior: smooth;
-            }
-            @media screen and (max-width: 800px) {
-                .aboutImage{
-                    display: none;
-                }
-                #logoImage{
-                    display: none;
-                }
-            }
-            
-            @media screen and (max-width: 500px) {
-                .importantInfo{
-                    flex-direction: column;
-                }
-                .partner{
-                    flex-direction: column;
-                }
-                .partnerImg{
-                    width: 50%;
-                    margin: 3%;
-                }
-                .impBox{
-                    background-color: rgb(200, 201, 202); 
-                    border-radius: 10px; 
-                    padding: 3%; 
-                    margin: 2%; 
-                    width: 60%; 
-                    height: 10%;
-                }
-            }
+      html {
+        scroll-behavior: smooth;
+      }
+      @media screen and (max-width: 800px) {
+        .aboutImage {
+          display: none;
+        }
+        #logoImage {
+          display: none;
+        }
+      }
 
-            @media screen and (min-width: 500px) {
-                .partnerImg{
-                    width: 30%;
-                    margin: 3%;
-                }
-                .impBox{
-                    background-color: rgb(200, 201, 202); 
-                    border-radius: 10px; 
-                    padding: 3%; 
-                    margin: 2%; 
-                    width: 50%; 
-                    height: 10%;
-                }
-            }
+      @media screen and (max-width: 500px) {
+        .importantInfo {
+          flex-direction: column;
+        }
+        .partner {
+          flex-direction: column;
+        }
+        .partnerImg {
+          width: 50%;
+          margin: 3%;
+        }
+        .impBox {
+          background-color: rgb(200, 201, 202);
+          border-radius: 10px;
+          padding: 3%;
+          margin: 2%;
+          width: 60%;
+          height: 10%;
+        }
+      }
 
-            @media screen and (min-width: 800px) {
-                .aboutText{
-                    margin-top: 5%;
-                }
-                
-                .partnerImg{
-                    width: 30%;
-                    margin: 3%;
-                }
+      @media screen and (min-width: 500px) {
+        .partnerImg {
+          width: 30%;
+          margin: 3%;
+        }
+        .impBox {
+          background-color: rgb(200, 201, 202);
+          border-radius: 10px;
+          padding: 3%;
+          margin: 2%;
+          width: 50%;
+          height: 10%;
+        }
+      }
 
-                .impBox{
-                    background-color: rgb(200, 201, 202); 
-                    border-radius: 10px; 
-                    padding: 3%; 
-                    margin: 2%; 
-                    width: 30%; 
-                    height: 10%;
-                }
-                
-            }
+      @media screen and (min-width: 800px) {
+        .aboutText {
+          margin-top: 5%;
+        }
 
-            .contact{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        .partnerImg {
+          width: 30%;
+          margin: 3%;
+        }
 
-            .connectIcon{
-                margin: 0% 1%;
-                font-size: 25px;
-                color: #7a7575;
-            }
+        .impBox {
+          background-color: rgb(200, 201, 202);
+          border-radius: 10px;
+          padding: 3%;
+          margin: 2%;
+          width: 30%;
+          height: 10%;
+        }
+      }
 
-            .connectIcon:hover {
-                color: #e26e0f;
-            }
+      .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-            
+      .connectIcon {
+        margin: 0% 1%;
+        font-size: 25px;
+        color: #7a7575;
+      }
 
+      .connectIcon:hover {
+        color: #e26e0f;
+      }
+
+      .quesLink {
+        float: right;
+      }
+
+      .quesLink:hover {
+        color: #e26e0f;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="main-header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-                    <a class="navbar-brand" href="index.html"><img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150040_0000+(1).png" class="logo" alt="" style="width: 50%; " id="logoImage"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1hUB9FffhSmxQoze_qkPozLqEk3b8lmz1/view?usp=sharing">Brochure</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sponsors">Our Partners</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/registrationform.html">Register</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#info">Time Line</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav"
+      >
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar-menu"
+              aria-controls="navbars-rs-food"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150040_0000+(1).png"
+                class="logo"
+                alt=""
+                style="width: 50%"
+                id="logoImage"
+            /></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul
+              class="nav navbar-nav ml-auto"
+              data-in="fadeInDown"
+              data-out="fadeOutUp"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://drive.google.com/file/d/1hUB9FffhSmxQoze_qkPozLqEk3b8lmz1/view?usp=sharing"
+                  >Brochure</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sponsors">Our Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ques">Questions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/registrationform.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#info">Time Line</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div id="slides-shop" class="cover-slides">
-            <ul class="slides-container">
-                <li class="text-center">
-                    <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics+(1).jpg" alt="" class="carousel-image">
-                    <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics+(1).jpg" alt="" class="carousel-image-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="m-b-20"><strong style="text-shadow: 3px 3px #000000;">Coderspree3.0 <br> by Innogeeks</strong></h1>
-                                <strong><p class="m-b-40" style="text-shadow: 3px 3px #000000;">Month Long OpenSource Event</p></strong>
-                                <a class="btn hvr-hover" href="/registrationform.html">Register Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="text-center">
-                    <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics.jpg" alt="" class="carousel-image">
-                    <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics+(1).jpg" alt="" class="carousel-image-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12" style="text-shadow: 0 0 3px #000000,">
-                                <h1 class="m-b-20"><strong style="text-shadow: 3px 3px #000000;">Coderspree3.0 <br> by Innogeeks</strong></h1>
-                                <strong><p class="m-b-40" style="text-shadow: 3px 3px #000000;">Month Long OpenSource Event</p></strong>
-                                <a class="btn hvr-hover" href="/registrationform.html" style="color: white">Register Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="slides-navigation">
-                <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <ul class="slides-container">
+        <li class="text-center">
+          <img
+            src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics+(1).jpg"
+            alt=""
+            class="carousel-image"
+          />
+          <img
+            src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics+(1).jpg"
+            alt=""
+            class="carousel-image-2"
+          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="m-b-20">
+                  <strong style="text-shadow: 3px 3px #000000"
+                    >Coderspree3.0 <br />
+                    by Innogeeks</strong
+                  >
+                </h1>
+                <strong
+                  ><p class="m-b-40" style="text-shadow: 3px 3px #000000">
+                    Month Long OpenSource Event
+                  </p></strong
+                >
+                <a class="btn hvr-hover" href="/registrationform.html"
+                  >Register Now</a
+                >
+              </div>
             </div>
-        </div>
+          </div>
+        </li>
+        <li class="text-center">
+          <img
+            src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics.jpg"
+            alt=""
+            class="carousel-image"
+          />
+          <img
+            src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics+(1).jpg"
+            alt=""
+            class="carousel-image-2"
+          />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12" style="text-shadow: 0 0 3px #000000">
+                <h1 class="m-b-20">
+                  <strong style="text-shadow: 3px 3px #000000"
+                    >Coderspree3.0 <br />
+                    by Innogeeks</strong
+                  >
+                </h1>
+                <strong
+                  ><p class="m-b-40" style="text-shadow: 3px 3px #000000">
+                    Month Long OpenSource Event
+                  </p></strong
+                >
+                <a
+                  class="btn hvr-hover"
+                  href="/registrationform.html"
+                  style="color: white"
+                  >Register Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="slides-navigation">
+        <a href="#" class="next"
+          ><i class="fa fa-angle-right" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="prev"
+          ><i class="fa fa-angle-left" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
     <!-- End Slider -->
 
     <!-- Start Categories  -->
     <div class="categories-shop" id="about">
-        <div class="container">
-            <center><h1 style="margin-bottom: 2%;"><strong>About Coderspree3.0</strong></h1></center> 
-            <div style="display: flex;">
-                <p class="aboutText" style="overflow-wrap: break-word; word-break: break-word; text-align: justify; margin-right: 5%;">One-month Coding sprint to summon all the wizards of problem-solving, ranging from beginner to advanced! ✨ Get ready to be a part of the most auspicious society of the college, *Innogeeks*. Exclusive  access to buzzing discord server of Innogeeks which is full of knowledge and innovation. 🚀 Become a part of mentoring sessions by our amazing team of coderspree mentors, not just that - be ready to outshine on the leaderboard and get a chance to win exclusive coderspree goodies! 🍫 This edition of coderspree is limited to students of KIET, we'll be expanding it next time : )</p>
-                <img class="aboutImage" style="width: 50%; border: 3px black solid; border-radius: 15px;" src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics+(2).jpg" alt="" >
-            </div>
+      <div class="container">
+        <center>
+          <h1 style="margin-bottom: 2%">
+            <strong>About Coderspree3.0</strong>
+          </h1>
+        </center>
+        <div style="display: flex">
+          <p
+            class="aboutText"
+            style="
+              overflow-wrap: break-word;
+              word-break: break-word;
+              text-align: justify;
+              margin-right: 5%;
+            "
+          >
+            One-month Coding sprint to summon all the wizards of
+            problem-solving, ranging from beginner to advanced! ✨ Get ready to
+            be a part of the most auspicious society of the college,
+            *Innogeeks*. Exclusive access to buzzing discord server of Innogeeks
+            which is full of knowledge and innovation. 🚀 Become a part of
+            mentoring sessions by our amazing team of coderspree mentors, not
+            just that - be ready to outshine on the leaderboard and get a chance
+            to win exclusive coderspree goodies! 🍫 This edition of coderspree
+            is limited to students of KIET, we'll be expanding it next time : )
+          </p>
+          <img
+            class="aboutImage"
+            style="width: 50%; border: 3px black solid; border-radius: 15px"
+            src="https://template-mail-images.s3.ap-south-1.amazonaws.com/Website+Graphics+(2).jpg"
+            alt=""
+          />
         </div>
+      </div>
     </div>
     <!-- End Categories -->
-	
-	<div class="box-add-products" id="sponsors">
-		<div class="container">
-            <center><h1><strong>OUR PARTNERS</strong></h1></center> 
-            <br><br>
-            <!-- <center><p class="btn hvr-hover"><a href="https://forms.gle/YJyJCh9xGMcUzSHk7" target="_blank" style="color: white">Sponsor Us</a></p></center> -->
 
-            <div style="display: flex; justify-content: center; align-items: center;" class="partner">
-                <img class="img-fluid partnerImg" src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png" alt="" />
-                <img class="img-fluid partnerImg" src="https://pbs.twimg.com/card_img/1706660851640635392/AI7tW52K?format=jpg&name=4096x4096" alt=""/>
-            </div>
+    <div class="box-add-products" id="sponsors">
+      <div class="container">
+        <center>
+          <h1><strong>OUR PARTNERS</strong></h1>
+        </center>
+        <br /><br />
+        <!-- <center><p class="btn hvr-hover"><a href="https://forms.gle/YJyJCh9xGMcUzSHk7" target="_blank" style="color: white">Sponsor Us</a></p></center> -->
 
-			<!-- <div class="row" style="">
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+          class="partner"
+        >
+          <img
+            class="img-fluid partnerImg"
+            src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png"
+            alt=""
+          />
+          <img
+            class="img-fluid partnerImg"
+            src="https://pbs.twimg.com/card_img/1706660851640635392/AI7tW52K?format=jpg&name=4096x4096"
+            alt=""
+          />
+        </div>
+
+        <!-- <div class="row" style="">
 				<div class="col-lg-6 col-md-4 col-sm-6">
 					<div class="offer-box-products" style="width: 50%;">
 						<img class="img-fluid" src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png" alt="" />
@@ -216,52 +349,361 @@
 					</div>
 				</div>
 			</div> -->
-		</div>
-	</div>
+      </div>
+    </div>
+
+    <section class="faq-section" id="ques">
+      <div class="container">
+        <div class="row">
+          <!-- ***** FAQ Start ***** -->
+          <div class="col-md-6 offset-md-3">
+            <center>
+              <h1 style="margin-bottom: 5%"><strong>Questions</strong></h1>
+            </center>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="faq" id="accordion">
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-1"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-1"
+                      style="color: #000000"
+                    >
+                      Week 1
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-1"
+                  class="collapse"
+                  aria-labelledby="faqHeading-1"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="color: #000000"></p>
+                    <p>
+                      User Input/Output:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Data Types:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      IF -Else:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      For Loop:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      While loop:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 1:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 2:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 3:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 4:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 5:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 6:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 7:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 8:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 9:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                    <p>
+                      Pattern 10:
+                      <a
+                        href="https://www.codingninjas.com/studio/problems/find-character-case_58513?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf"
+                        class="quesLink"
+                        >View Problem</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-2">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-2"
+                      data-aria-expanded="false"
+                      data-aria-controls="faqCollapse-2"
+                      style="color: #000000"
+                    >
+                      Week 2
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-2"
+                  class="collapse"
+                  aria-labelledby="faqHeading-2"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="color: #000000">
+                      To Be Announced on 13th October...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-3">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-3"
+                      data-aria-expanded="false"
+                      data-aria-controls="faqCollapse-3"
+                      style="color: #000000"
+                    >
+                      Week 3
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-3"
+                  class="collapse"
+                  aria-labelledby="faqHeading-3"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="color: #000000">
+                      To Be Announced on 20th October......
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqHeading-4">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-4"
+                      data-aria-expanded="false"
+                      data-aria-controls="faqCollapse-4"
+                      4
+                      style="color: #000000"
+                    >
+                      Week 4
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-4"
+                  class="collapse"
+                  aria-labelledby="faqHeading-4"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="color: #000000">
+                      To Be Announced on 26th October......
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Start Blog  -->
     <div class="latest-blog" id="info">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="title-all text-center">
-                            <h1>Time Line</h1>
-                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                                <div class="impBox"><center><h3>Registration start</h3><br>October 04th 2023</center></div>
-                                <div class="impBox"><center><h3>Registration ends</h3><br>October 06th 2023</center></div>
-                                <div class="impBox"><center><h3>Introductory Github Session</h3><br>October 05th 2023</center></div>
-                                <div class="impBox"><center><h3>Event Starts</h3><br>October 05th 2023</center></div>
-                                <div class="impBox"><center><h3>Events Ends</h3><br>October 30th 2023</center></div>
-                                <div class="impBox"><center><h3>Closing Ceremony</h3><br>October 31th 2023</center></div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title-all text-center">
+              <h1>Time Line</h1>
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                "
+              >
+                <div class="impBox">
+                  <center>
+                    <h3>Registration start</h3>
+                    <br />October 04th 2023
+                  </center>
                 </div>
-                    
+                <div class="impBox">
+                  <center>
+                    <h3>Registration ends</h3>
+                    <br />October 06th 2023
+                  </center>
+                </div>
+                <div class="impBox">
+                  <center>
+                    <h3>Introductory Github Session</h3>
+                    <br />October 05th 2023
+                  </center>
+                </div>
+                <div class="impBox">
+                  <center>
+                    <h3>Event Starts</h3>
+                    <br />October 05th 2023
+                  </center>
+                </div>
+                <div class="impBox">
+                  <center>
+                    <h3>Events Ends</h3>
+                    <br />October 30th 2023
+                  </center>
+                </div>
+                <div class="impBox">
+                  <center>
+                    <h3>Closing Ceremony</h3>
+                    <br />October 31th 2023
+                  </center>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
     <!-- End Blog  -->
 
     <!-- Start copyright  -->
     <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2023 <a href="#"></a> Design By :
-            <a href="https://innogeeks.in">Team Innogeeks</a></p>
-        <div class="contact">
-            <div style="margin: 0% 1%;"><a href="https://www.instagram.com/innogeeks.kiet/" class="connectIcon"><i class="fa fa-instagram"></i></a></div>
-            <div style="margin: 0% 1%;"><a href="https://twitter.com/InnogeeksKiet" class="connectIcon"><i class="fa fa-twitter"></i></a></div>
-            <div style="margin: 0% 1%;"><a href="https://www.linkedin.com/company/innogeeks" class="connectIcon"><i class="fa fa-linkedin-square"></i></a></div>
-            <div style="margin: 0% 1%;"><a href="https://www.youtube.com/@innogeekskiet3679" class="connectIcon"><i class="fa fa-youtube-play"></i></a></div>
+      <p class="footer-company">
+        All Rights Reserved. &copy; 2023 <a href="#"></a> Design By :
+        <a href="https://innogeeks.in">Team Innogeeks</a>
+      </p>
+      <div class="contact">
+        <div style="margin: 0% 1%">
+          <a
+            href="https://www.instagram.com/innogeeks.kiet/"
+            class="connectIcon"
+            ><i class="fa fa-instagram"></i
+          ></a>
         </div>
+        <div style="margin: 0% 1%">
+          <a href="https://twitter.com/InnogeeksKiet" class="connectIcon"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+        <div style="margin: 0% 1%">
+          <a
+            href="https://www.linkedin.com/company/innogeeks"
+            class="connectIcon"
+            ><i class="fa fa-linkedin-square"></i
+          ></a>
+        </div>
+        <div style="margin: 0% 1%">
+          <a
+            href="https://www.youtube.com/@innogeekskiet3679"
+            class="connectIcon"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+        </div>
+      </div>
     </div>
     <!-- End copyright  -->
 
-    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+    <a href="#" id="back-to-top" title="Back to top" style="display: none"
+      >&uarr;</a
+    >
 
     <!-- ALL JS FILES -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.superslides.min.js"></script>
     <script src="js/custom.js"></script>
-</body>
-
+  </body>
 </html>
