@@ -42,16 +42,65 @@
                     display: none;
                 }
             }
-            @media screen and (min-width: 800px) {
-                .aboutText{
-                    margin-top: 5%;
-                }
-            }
+            
             @media screen and (max-width: 500px) {
                 .importantInfo{
                     flex-direction: column;
                 }
+                .partner{
+                    flex-direction: column;
+                }
+                .partnerImg{
+                    width: 50%;
+                    margin: 3%;
+                }
+                .impBox{
+                    background-color: rgb(200, 201, 202); 
+                    border-radius: 10px; 
+                    padding: 3%; 
+                    margin: 2%; 
+                    width: 60%; 
+                    height: 10%;
+                }
             }
+
+            @media screen and (min-width: 500px) {
+                .partnerImg{
+                    width: 30%;
+                    margin: 3%;
+                }
+                .impBox{
+                    background-color: rgb(200, 201, 202); 
+                    border-radius: 10px; 
+                    padding: 3%; 
+                    margin: 2%; 
+                    width: 50%; 
+                    height: 10%;
+                }
+            }
+
+            @media screen and (min-width: 800px) {
+                .aboutText{
+                    margin-top: 5%;
+                }
+                
+                .partnerImg{
+                    width: 30%;
+                    margin: 3%;
+                }
+
+                .impBox{
+                    background-color: rgb(200, 201, 202); 
+                    border-radius: 10px; 
+                    padding: 3%; 
+                    margin: 2%; 
+                    width: 30%; 
+                    height: 10%;
+                }
+                
+            }
+
+            
 
     </style>
 
@@ -71,7 +120,7 @@
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1hUB9FffhSmxQoze_qkPozLqEk3b8lmz1/view?usp=sharing">Brochure</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sponsors">Our Partners</a></li>
                         <li class="nav-item"><a class="nav-link" href="/registrationform.html">Register</a></li>
                         <li class="nav-item"><a class="nav-link" href="#info">Important Info</a></li>
                     </ul>
@@ -130,21 +179,27 @@
 	
 	<div class="box-add-products" id="sponsors">
 		<div class="container">
-            <center><h1><strong>OUR SPONSORS</strong></h1></center> 
+            <center><h1><strong>OUR PARTNERS</strong></h1></center> 
             <br><br>
-            <center><p class="btn hvr-hover"><a href="https://forms.gle/YJyJCh9xGMcUzSHk7" target="_blank" style="color: white">Sponsor Us</a></p></center>
-			<div class="row">
-				<!-- <div class="col-lg-6 col-md-6 col-sm-12">
-					<div class="offer-box-products">
-						<img class="img-fluid" src="images/add-img-01.jpg" alt="" />
+            <!-- <center><p class="btn hvr-hover"><a href="https://forms.gle/YJyJCh9xGMcUzSHk7" target="_blank" style="color: white">Sponsor Us</a></p></center> -->
+
+            <div style="display: flex; justify-content: center; align-items: center;" class="partner">
+                <img class="img-fluid partnerImg" src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png" alt="" />
+                <img class="img-fluid partnerImg" src="https://pbs.twimg.com/card_img/1706660851640635392/AI7tW52K?format=jpg&name=4096x4096" alt=""/>
+            </div>
+
+			<!-- <div class="row" style="">
+				<div class="col-lg-6 col-md-4 col-sm-6">
+					<div class="offer-box-products" style="width: 50%;">
+						<img class="img-fluid" src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png" alt="" />
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<div class="offer-box-products">
-						<img class="img-fluid" src="images/add-img-02.jpg" alt="" />
+						<img class="img-fluid" src="https://pbs.twimg.com/card_img/1706660851640635392/AI7tW52K?format=jpg&name=4096x4096" alt="" />
 					</div>
-				</div> -->
-			</div>
+				</div>
+			</div> -->
 		</div>
 	</div>
 
@@ -156,10 +211,10 @@
                         <div class="title-all text-center">
                             <h1>Important Information</h1>
                             <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                                <div style="background-color: rgb(200, 201, 202); border-radius: 10px; padding: 3%; margin: 2%; width: 30%; height: 10%;"><center><h3>Registration start</h3><br>October 04th 2023</center></div>
-                                <div style="background-color: rgb(200, 201, 202); border-radius: 10px; padding: 3%; margin: 2%; width: 30%; height: 10%;"><center><h3>Registration ends</h3><br>October 06th 2023</center></div>
-                               
-                                <!-- <div style="background-color: rgb(200, 201, 202); border-radius: 10px; padding: 3%; margin: 2%; width: 30%; height: 10%;"><center><h3>Total Number of Registrations</h3><br>0</center></div> -->
+                                <div class="impBox"><center><h3>Registration start</h3><br>October 04th 2023</center></div>
+                                <div class="impBox"><center><h3>Registration ends</h3><br>October 06th 2023</center></div>
+                                <div class="impBox"><center><h3>Github Session</h3><br>October 05th 2023</center></div>
+                                <!-- <div class="impBox"><center><h3>Closing Ceremony</h3><br>October 30th 2023</center></div> -->
                             </div>
                         </div>
                     </div>

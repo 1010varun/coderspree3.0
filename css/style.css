@@ -918,7 +918,7 @@ ul.cart-list > li.total > .btn:hover {
 }
 
 .offer-box-products {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); */
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -926,7 +926,7 @@ ul.cart-list > li.total > .btn:hover {
 .offer-box-products:hover {
   -webkit-transform: translateY(6px);
   transform: translateY(6px);
-  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.1); */
 }
 
 /*------------------------------------------------------------------ Products -------------------------------------------------------------------*/
