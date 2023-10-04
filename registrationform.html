@@ -10,8 +10,15 @@
       type="text/css"
     />
     <link rel="stylesheet" href="css/form.css" />
-    <link rel="shortcut icon" href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png">
+    <link
+      rel="shortcut icon"
+      href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://template-mail-images.s3.ap-south-1.amazonaws.com/20231002_150102_0000+(1).png"
+    />
   </head>
   <body>
     <div class="row">
@@ -19,10 +26,8 @@
         <form action="" id="regform">
           <h1>Registration Form</h1>
 
-          <p class="alert">Registered Successfully!</p>
-
-          <!-- <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name"> -->
+          <h3 class="alert">Registered Successfully!</h3>
+          <h3 class="alertDan">Fill all Fields</h3>
 
           <div class="input-container">
             <input type="text" id="name" required />
@@ -39,6 +44,24 @@
           <div class="input-container">
             <input type="text" id="github" required />
             <label for="github" class="label">Github Profile</label>
+          </div>
+
+          <div
+            style="display: flex; justify-content: center; margin-bottom: 6%"
+          >
+            <div class="radio-inputs">
+              <h3 style="color: black; text-align: center">
+                Will attend github introductory session on October 5th
+              </h3>
+              <label class="radio">
+                <input type="radio" name="session" value="Yes" />
+                <span class="name">Yes</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="session" value="No" />
+                <span class="name">No</span>
+              </label>
+            </div>
           </div>
 
           <button type="submit" class="button">Register</button>
