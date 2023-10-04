@@ -23,14 +23,21 @@ function submitForm(e) {
     const library = getvalue("library");
     const github = getvalue("github");
     const session = document.getElementsByName("session");
+    const hostel = document.getElementsByName("hostel");
     var attend = ""
+    var type = ""
 
     for (var i = 0; i < session.length; i++) {
                 if (session[i].checked)
                     attend = session[i].value
     }
     
-    if (attend.length === 0) {
+    for (var i = 0; i < hostel.length; i++) {
+                if (hostel[i].checked)
+                    type = hostel[i].value
+    }
+    
+    if (attend.length === 0 || type.length === 0) {
         document.querySelector(".alertDan").style.display = "block";
         setTimeout(() => {
             document.querySelector(".alertDan").style.display = "none";
@@ -39,7 +46,7 @@ function submitForm(e) {
 
     else {
 
-        savedata(name, mail, library, github, attend);
+        savedata(name, mail, library, github, attend, type);
 
         document.querySelector('.alert').style.display = "block"
 
@@ -51,7 +58,7 @@ function submitForm(e) {
     }
 }
 
-const savedata = (name, mail, library, github, session) => {
+const savedata = (name, mail, library, github, session, type) => {
     const newForm = contactFormDB.push();
 
     newForm.set({
@@ -60,6 +67,7 @@ const savedata = (name, mail, library, github, session) => {
         libraryID: library,
         github: github,
         attendSession: session,
+        hosteller: type,
     })
 }
 
