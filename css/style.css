@@ -2676,8 +2676,8 @@ ul.cart-list > li.total > .btn:hover {
 
 .faq-section {
     background: #fdfdfd;
-    min-height: 100vh;
-    padding: 10vh 0 0;
+    min-height: 85vh;
+    padding: 3vh 0 0;
 }
 .faq-title h2 {
   position: relative;
