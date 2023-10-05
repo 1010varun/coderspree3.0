@@ -24,41 +24,41 @@ function submitForm(e) {
     const github = getvalue("github");
     const session = document.getElementsByName("session");
     const hostel = document.getElementsByName("hostel");
-    var attend = ""
-    var type = ""
+    // var attend = ""
+    // var type = ""
 
-    for (var i = 0; i < session.length; i++) {
-                if (session[i].checked)
-                    attend = session[i].value
-    }
+    // for (var i = 0; i < session.length; i++) {
+    //             if (session[i].checked)
+    //                 attend = session[i].value
+    // }
     
-    for (var i = 0; i < hostel.length; i++) {
-                if (hostel[i].checked)
-                    type = hostel[i].value
-    }
+    // for (var i = 0; i < hostel.length; i++) {
+    //             if (hostel[i].checked)
+    //                 type = hostel[i].value
+    // }
     
-    if (attend.length === 0 || type.length === 0) {
-        document.querySelector(".alertDan").style.display = "block";
-        setTimeout(() => {
-            document.querySelector(".alertDan").style.display = "none";
-        }, 2000);
-    }
+    // if (attend.length === 0 || type.length === 0) {
+    //     document.querySelector(".alertDan").style.display = "block";
+    //     setTimeout(() => {
+    //         document.querySelector(".alertDan").style.display = "none";
+    //     }, 2000);
+    // }
 
-    else {
+    // else {
 
-        savedata(name, mail, library, github, attend, type);
+    savedata(name, mail, library, github);
 
-        document.querySelector('.alert').style.display = "block"
+    document.querySelector('.alert').style.display = "block"
 
-        setTimeout(() => {
-            document.querySelector(".alert").style.display = "none";
-        }, 2000)
+    setTimeout(() => {
+        document.querySelector(".alert").style.display = "none";
+    }, 2000)
 
-        document.getElementById("regform").reset();
-    }
+    document.getElementById("regform").reset();
+    // }
 }
 
-const savedata = (name, mail, library, github, session, type) => {
+const savedata = (name, mail, library, github) => {
     const newForm = contactFormDB.push();
 
     newForm.set({
@@ -66,8 +66,6 @@ const savedata = (name, mail, library, github, session, type) => {
         email: mail,
         libraryID: library,
         github: github,
-        attendSession: session,
-        hosteller: type,
     })
 }
 
